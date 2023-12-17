@@ -184,11 +184,12 @@ body{
 }
 
 .hero-list-link-top::before{
-    content: url("./css-img/on.png");
-    display: inline-block;
+    /* content: url("./css-img/on.png");
+    display: inline-block; */
+    content: "";
+    border: 1px solid rgba(0, 0, 0, 1);
 
-    width: 215px;
-    height: 106px;
+    height: 223px;
 
     position: absolute;
     bottom: 179px;
@@ -196,11 +197,12 @@ body{
 }
 
 .hero-list-link-bottom::after{
-    content: url("./css-img/under.png");
-    display: inline-block;
+    /* content: url("./css-img/under.png");
+    display: inline-block; */
+    content: "";
+    border: 1px solid rgba(0, 0, 0, 1);
 
-    width: 223px;
-    height: 518px;
+    height: 215px;
 
     position: absolute;
     top: 84px;
