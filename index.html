@@ -76,7 +76,7 @@
             
                         <p class="hero-desc">Сильне тіло, сильний дух.</p>
             
-                        <button class="hero-btn">Записатися</button>
+                        <button class="hero-btn" data-modal-open>Записатися</button>
     
                     </div>
 
@@ -103,5 +103,37 @@
     </main>
 
     <footer></footer>
+
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <p class="modal-desc">Записатися</p>
+
+            <button class="modal-btn-close" data-modal-close>
+                <a class="modal-close-link" href="#">
+                    <svg class="modal-svg-close" width="24" height="24">
+                        <use href="./symbol-defs.svg#icon-x"></use>
+                    </svg>
+                </a>
+            </button>
+
+            <form class="modal-form" action="">
+                <label for="" class="modal-label" >
+                    <input placeholder="Імʼя" class="input-name" type="name"  name="user-name" minlength="3" maxlength="10" required>
+                </label>
+                <label for="" class="modal-label" >
+                    <input placeholder="Номер телефону" class="input-tel" type="tel"  name="user-tel" pattern="^380\d{9}$" maxLength="12" required>
+                </label>
+                <label for="" class="modal-label modal-label-texarea">
+                    <textarea placeholder="Повідомлення" class="modal-texarea" name="user-message"></textarea>
+
+                    <button class="modal-btn-send" type="submit">Записатися</button>
+                </label>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
